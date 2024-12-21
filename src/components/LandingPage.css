@@ -1,0 +1,83 @@
+.landing-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 0 1rem;
+  overflow: hidden;
+  background: linear-gradient(
+    45deg,
+    #1a1a1a,
+    #333333,
+    #4d4d4d,
+    #1a1a1a
+  ); /* Shades of black */
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.landing-content {
+  max-width: 800px;
+  position: relative;
+  z-index: 1; /* Ensure content stays on top of the background */
+}
+
+.landing-page h1 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.landing-page p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  transition: background 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background: #fff;
+  color: #333;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .landing-page h1 {
+    font-size: 2.5rem;
+  }
+
+  .landing-page p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
+}

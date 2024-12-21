@@ -1,0 +1,84 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4; /* Light gray background color */
+  color: #333; /* Dark text color */
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Section styles */
+.section {
+  margin: 2rem 0;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #555; /* Darker background color on hover */
+}
+/* For devices with a maximum width of 768px */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+/* For devices with a maximum width of 576px */
+@media (max-width: 576px) {
+  .container {
+    padding: 0 5px;
+  }
+
+  header {
+    padding: 0.5rem 0;
+  }
+
+  footer {
+    padding: 0.5rem 0;
+  }
+
+  .section {
+    margin: 1rem 0;
+  }
+
+  .button {
+    padding: 0.3rem 0.8rem;
+  }
+}

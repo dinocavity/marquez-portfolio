@@ -1,0 +1,144 @@
+/* Hero Section Styling */
+.hero-section {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-pic {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  border-radius: 50%; /* Make image circular */
+}
+h1 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+.year-section {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.download-cv-btn {
+  background-color: #fff; /* White background color */
+  color: #333; /* Dark text color */
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.download-cv-btn:hover {
+  background-color: #333; /* Dark background color on hover */
+  color: #fff; /* White text color on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 3rem 1rem;
+    height: auto; /* Adjust height on smaller screens */
+  }
+
+  .hero-content {
+    padding: 1.5rem;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .year-section,
+  .description {
+    font-size: 1rem;
+  }
+
+  .download-cv-btn {
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+/* Tablet Responsiveness (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .hero-content {
+    max-width: 90%; /* More flexible width for tablet screens */
+    padding: 2rem;
+  }
+
+  .profile-pic {
+    width: 130px;
+    height: 130px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .year-section {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+
+  .download-cv-btn {
+    padding: 0.7rem 2.2rem;
+    font-size: 1.05rem;
+  }
+}
+
+/* Desktop Responsiveness (1024px and up) */
+@media (min-width: 1025px) {
+  .hero-section {
+    padding: 5rem 2rem;
+  }
+
+  .hero-content {
+    max-width: 800px;
+    padding: 2rem;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .year-section {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+
+  .download-cv-btn {
+    padding: 0.8rem 2.5rem;
+    font-size: 1.1rem;
+  }
+}

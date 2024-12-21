@@ -1,0 +1,191 @@
+/* General Styles */
+.works-section {
+  padding: 2rem;
+  background-color: #121212; /* Dark gray background */
+  color: #e0e0e0; /* Light gray text */
+  font-family: Arial, sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ffffff; /* White text for title */
+}
+
+/* Works Grid */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.work-category {
+  background-color: #1e1e1e; /* Slightly lighter gray */
+  border: 1px solid #2e2e2e; /* Border with a subtle contrast */
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
+}
+
+.work-category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #e0e0e0; /* Light gray text for headers */
+}
+
+.work-category p {
+  font-size: 0.9rem;
+  color: #b0b0b0; /* Medium gray text for descriptions */
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #1e1e1e; /* Same as work category for consistency */
+  color: #e0e0e0; /* Light gray text */
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #ffffff; /* Bright white for hover */
+}
+
+.modal-files {
+  margin-top: 1rem;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 400px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #2e2e2e;
+  border-radius: 8px;
+}
+
+/* Navigation Buttons */
+.image-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.nav-btn {
+  background: #2e2e2e; /* Dark gray button */
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #e0e0e0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.nav-btn:hover {
+  background: #444444; /* Slightly lighter gray for hover */
+}
+
+/* Download Buttons */
+.download-options {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.download-btn,
+.download-all-btn {
+  background: #2e2e2e;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #e0e0e0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.download-btn:hover,
+.download-all-btn:hover {
+  background: #444444;
+}
+
+/* Close Modal Button */
+.close-modal-btn {
+  margin-top: 1rem;
+  background: #2e2e2e;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #e0e0e0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.close-modal-btn:hover {
+  background: #444444;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-image {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 1rem;
+  }
+
+  .nav-btn {
+    padding: 0.5rem;
+  }
+
+  .download-btn,
+  .download-all-btn,
+  .close-modal-btn {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
